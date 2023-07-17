@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif Pro", sans-serif;
+}
+
+body {
+  background: url(./images/old-paper.png), lightgray 50% / cover no-repeat;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1rem;
+  align-items: center;
+  color: #a54328;
+  max-width: 16rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h2 + p {
+  font-weight: bold;
+}
+ul {
+  margin-bottom: 2rem;
+}
+button {
+  border: none;
+  border-radius: 0.5rem;
+  background: #a54328;
+  color: white;
+  display: flex;
+  width: 8rem;
+  height: 2rem;
+  padding: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 2rem;
+}
+
+h1,
+.container img,
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.container-second p {
+  color: #a54328;
+  font-weight: bold;
+}
+
+.container-second {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 770px) {
+  main {
+    padding: 10rem;
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 16rem;
+  }
+
+  .container {
+    max-width: 40rem;
+  }
+
+  .container-second {
+    max-width: 50rem;
+  }
+
+  button {
+    margin-top: 6rem;
+  }
+}
